@@ -6,6 +6,9 @@ Infra Local Localstack
 - terraform init
 - terraform apply (yes)
 
+### Configurações Docker-Compose
+- [Docker-Compose.yml](https://github.com/localstack/localstack/blob/master/docker-compose.yml)
+
 ### Comandos Uteis
 * GitBash
 - aws --endpoint-url=http://localhost:4566 sns list-topics
