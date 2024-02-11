@@ -23,6 +23,8 @@ Infra Local Localstack
 - aws --endpoint-url=http://localhost:4566 s3 ls
 2024-02-08 14:13:10 bucket-no-container
 
-* Derrubar o docker
+### Para derrubar o serviço Docker Compose:
 - docker-compose down
+
+### Para iniciar o serviço Docker Compose novamente:
 - docker compose up
