@@ -1,27 +1,32 @@
 # StartInfraLocalstack
-Infra Local Localstack
+Este projeto oferece uma solução simplificada para iniciar e configurar um ambiente local usando o Localstack, permitindo simular serviços da AWS.
 
-### Configuração para execultar Local
-* Dowloand do Binário site oficial: 
-- https://docs.localstack.cloud/getting-started/installation/
+### Pré-requisitos
+* Certifique-se de ter baixado o binário do Localstack do site oficial
+- Baixe o binário compatível com o seu sistema.
+ https://docs.localstack.cloud/getting-started/installation/
 
-* Defina uma pasta na sua maquina exemplo:
-
+* Definir a Pasta do Binário exemplo:
+ Escolha ou crie uma pasta em sua máquina onde o binário será armazenado.
 ![alt text](image-1.png)
 
-* Comando para visualizar versão `localstack --version`
-* Inicialize com o comando: localStackStart 
+* Visualizar a Versão do Localstack:
+Utilize o comando `localstack --version` para verificar a versão instalada.
+* Inicialize com o comando: 
+Inicie o Localstack com o comando `localStackStart`
 
 ![alt text](image-2.png)
 
-* Edite  as configurações de variaveis de ambiente e adicione o caminho do Binario exemplo: `C:\Users\Renato Ferreira\public\localstack`
+* Configurar Variáveis de Ambiente:
+Edite as configurações de variáveis de ambiente e adicione o caminho do binário Localstack exemplo: `C:\Users\meu-desktop\public\localstack`<br/><br/>
 
-![alt text](image.png)
-A mensagem de Ready indica que o localstack está execultano na sua maquina sem erros.
+* Verificar se o Localstack Está Executando:
+Uma mensagem de "Ready" indica que o Localstack está sendo executado em sua máquina sem erros.
+![alt text](image.png) <br/><br/>
 
 * Acessar o console localstack 
-* Sign in - faça loguin ou com git ou crie uma conta
-- https://www.localstack.cloud/ 
+* Sign in - faça login com git ou crie uma conta
+ https://www.localstack.cloud/  <br/><br/>
 
 * Status e serviços
 - https://app.localstack.cloud/inst/default/status
@@ -45,6 +50,7 @@ A mensagem de Ready indica que o localstack está execultano na sua maquina sem 
 
 - Exemplo criar um bucket no S3
 - aws --endpoint-url=http://localhost:4566 s3 mb s3//bucket-no-container
+
 ![alt text](image-7.png)
 
 * Lista recursos criados
@@ -65,7 +71,23 @@ A mensagem de Ready indica que o localstack está execultano na sua maquina sem 
 ### Para iniciar o serviço Docker Compose novamente:
 - docker compose up
 
-### TerraForms Terminal VSCode
+### Criar recursos utilizando infra terraform
+Definição de recursos no arquivo: `resources.tf`
+
+## Configurar o provedor do AWS para apontar para o Localstack 
+Arquivo de configuração terraforms: `main.tf`
+
+### Comandos uteis para o terraForms via Terminal VSCode
 - docker-compose up (cria o localstak no docker)
 - terraform init
 - terraform apply (yes)
+
+
+# ATENÇÃO UTILIZEI AQUI 3 ABORDAGEM 
+* 1 - (Criar, Remover, Atualizar , Editar Recursos) via navegador web do local stack
+
+* 2 - (Criar, Remover, Atualizar , Editar Recursos) via CDK CLI AWS
+
+* 3 - (Criar, Remover, Atualizar , Editar Recursos) via infra terraform
+observação aqui não tem o passo a passo de instalação e configuração terraforms.
+Você precisa instalar e configurar para utilizar esses comandos.
