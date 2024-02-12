@@ -48,8 +48,7 @@ Uma mensagem de "Ready" indica que o Localstack está sendo executado em sua má
 
 ### Criar recursos via terminal aws
 
-- Exemplo criar um bucket no S3
-- aws --endpoint-url=http://localhost:4566 s3 mb s3//bucket-no-container
+- Exemplo criar um bucket no S3 - via terminal
 
 ![alt text](image-7.png)
 
