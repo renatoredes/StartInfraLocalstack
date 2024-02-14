@@ -1,4 +1,4 @@
-# StartInfraLocalstack
+![image](https://github.com/renatoredes/StartInfraLocalstack/assets/18330802/cdb835d6-2c44-4f30-981c-3dcfa7be1cde)# StartInfraLocalstack
 Este projeto oferece uma solução simplificada para iniciar e configurar um ambiente local usando o Localstack, permitindo simular serviços da AWS.
 
 ### Pré-requisitos
@@ -13,7 +13,9 @@ Este projeto oferece uma solução simplificada para iniciar e configurar um amb
 * Visualizar a Versão do Localstack:
 Utilize o comando `localstack --version` para verificar a versão instalada.
 * Inicialize com o comando: 
-Inicie o Localstack com o comando `localStackStart`
+Inicie o Localstack com o comando `localstack start`
+* Antes de inicializar o localstack com o comando  `localstack start` inicialize o docker
+  ![image](https://github.com/renatoredes/StartInfraLocalstack/assets/18330802/39fca6e8-3f45-4c98-a6e2-cd6f05aed7ef)
 
 ![alt text](image-2.png)
 
